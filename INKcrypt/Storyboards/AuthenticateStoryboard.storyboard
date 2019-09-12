@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hvk-af-bQH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authenticate View Controller-->
+        <scene sceneID="4y9-uz-7SR">
+            <objects>
+                <viewController storyboardIdentifier="AuthenticateViewControllerID" id="Hvk-af-bQH" customClass="AuthenticateViewController" customModule="INKcrypt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Joh-Cb-fZA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ2-a9-GlS">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.22352941176470589" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sJM-at-Pyc"/>
+                                </constraints>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="scanButtonAction:" destination="Hvk-af-bQH" eventType="touchUpInside" id="63S-4b-x1B"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jha-Rw-U2q">
+                                <rect key="frame" x="20" y="84" width="335" height="433"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-3i-USJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="305"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="305" id="E4K-J7-izi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4pi-Px-yBG">
+                                        <rect key="frame" x="0.0" y="313" width="335" height="120"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m9M-aE-ME9">
+                                                <rect key="frame" x="0.0" y="0.0" width="164" height="120"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XNm-Af-PsS">
+                                                <rect key="frame" x="172" y="0.0" width="163" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="163" id="gGf-K6-7qy"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="XNm-Af-PsS" firstAttribute="top" secondItem="4pi-Px-yBG" secondAttribute="top" id="2e8-KY-p7o"/>
+                                            <constraint firstItem="m9M-aE-ME9" firstAttribute="leading" secondItem="4pi-Px-yBG" secondAttribute="leading" id="5HA-4q-Sx2"/>
+                                            <constraint firstItem="m9M-aE-ME9" firstAttribute="top" secondItem="4pi-Px-yBG" secondAttribute="top" id="S6m-AM-x5c"/>
+                                            <constraint firstAttribute="bottom" secondItem="m9M-aE-ME9" secondAttribute="bottom" id="k5d-Pg-Iul"/>
+                                            <constraint firstAttribute="bottom" secondItem="XNm-Af-PsS" secondAttribute="bottom" id="kIN-fQ-SQt"/>
+                                            <constraint firstAttribute="trailing" secondItem="XNm-Af-PsS" secondAttribute="trailing" id="qWN-1b-iE5"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR Code data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMq-wq-j8o">
+                                <rect key="frame" x="20" y="558" width="335" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pud-e3-nwT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jha-Rw-U2q" firstAttribute="leading" secondItem="FGH-0Q-gWj" secondAttribute="leading" constant="20" id="78p-to-BE8"/>
+                            <constraint firstItem="FGH-0Q-gWj" firstAttribute="trailing" secondItem="cQ2-a9-GlS" secondAttribute="trailing" constant="20" id="B3x-Bw-yBx"/>
+                            <constraint firstItem="SMq-wq-j8o" firstAttribute="leading" secondItem="FGH-0Q-gWj" secondAttribute="leading" constant="20" id="BMt-xM-KB0"/>
+                            <constraint firstItem="FGH-0Q-gWj" firstAttribute="trailing" secondItem="SMq-wq-j8o" secondAttribute="trailing" constant="20" id="MS4-BT-zZe"/>
+                            <constraint firstItem="cQ2-a9-GlS" firstAttribute="leading" secondItem="FGH-0Q-gWj" secondAttribute="leading" constant="20" id="Nhc-JB-Cjl"/>
+                            <constraint firstItem="cQ2-a9-GlS" firstAttribute="top" secondItem="SMq-wq-j8o" secondAttribute="bottom" constant="38" id="WU8-Lj-RrW"/>
+                            <constraint firstItem="jha-Rw-U2q" firstAttribute="top" secondItem="FGH-0Q-gWj" secondAttribute="top" constant="64" id="ZOq-bN-rEc"/>
+                            <constraint firstItem="FGH-0Q-gWj" firstAttribute="bottom" secondItem="cQ2-a9-GlS" secondAttribute="bottom" constant="20" id="eUL-vf-bvY"/>
+                            <constraint firstItem="SMq-wq-j8o" firstAttribute="top" secondItem="jha-Rw-U2q" secondAttribute="bottom" constant="41" id="ns9-WC-zEz"/>
+                            <constraint firstItem="FGH-0Q-gWj" firstAttribute="trailing" secondItem="jha-Rw-U2q" secondAttribute="trailing" constant="20" id="zbM-fh-weH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FGH-0Q-gWj"/>
+                    </view>
+                    <connections>
+                        <outlet property="barcodeValueLabel" destination="SMq-wq-j8o" id="JtX-hD-4eg"/>
+                        <outlet property="imageView" destination="Jbw-3i-USJ" id="a2d-vB-Q1F"/>
+                        <outlet property="imageView1" destination="m9M-aE-ME9" id="1Yw-MT-xJv"/>
+                        <outlet property="imageView2" destination="XNm-Af-PsS" id="jsM-Yy-OOD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daJ-E7-VxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="113"/>
+        </scene>
+    </scenes>
+</document>

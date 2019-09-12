@@ -1,0 +1,61 @@
+PODS:
+  - GoogleMaps (3.0.1):
+    - GoogleMaps/Maps (= 3.0.1)
+  - GoogleMaps/Base (3.0.1)
+  - GoogleMaps/Maps (3.0.1):
+    - GoogleMaps/Base
+  - GooglePlaces (3.0.1):
+    - GoogleMaps/Base (= 3.0.1)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Realm (3.15.0):
+    - Realm/Headers (= 3.15.0)
+  - Realm/Headers (3.15.0)
+  - RealmSwift (3.15.0):
+    - Realm (= 3.15.0)
+  - SDWebImage (4.4.4):
+    - SDWebImage/Core (= 4.4.4)
+  - SDWebImage/Core (4.4.4)
+  - SkyFloatingLabelTextField (3.6.0)
+  - SVPinView (1.0.6)
+  - SVPullToRefresh (0.4.1)
+  - Toast-Swift (4.0.1)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManagerSwift
+  - RealmSwift
+  - SDWebImage
+  - SkyFloatingLabelTextField
+  - SVPinView (~> 1.0)
+  - SVPullToRefresh
+  - Toast-Swift (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SkyFloatingLabelTextField
+    - SVPinView
+    - SVPullToRefresh
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  GoogleMaps: ec8c032304e19f609aba11096eed7207ca1af32d
+  GooglePlaces: 44d1be1cf4c2919563162fe369c117168e551e6d
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Realm: 9b834e1be6062f544805252c812348872dc5d4ed
+  RealmSwift: 8a41886f8ab6efef9eb8df97de2f2bb911561a79
+  SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
+  SVPinView: 3dda372c7a1c051b41788f07bf7a8339aa19083e
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+
+PODFILE CHECKSUM: cae7638a61b3097c45e3a7929ca90538eea364f2
+
+COCOAPODS: 1.6.1

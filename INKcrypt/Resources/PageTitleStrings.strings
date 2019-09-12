@@ -1,0 +1,34 @@
+/* 
+  PageTitleStrings.strings
+  Emax
+
+  Created by Sandeep Kumar on 31/12/18.
+  Copyright © 2018 Q3 Technologies. All rights reserved.
+*/
+"orderDetails" = "Order Details";
+"myOrder" = "My Order";
+"account" = "Account";
+"profile" = "My Profile";
+"setting" = "Settings";
+"changePassword" = "Change Password";
+"forgotPassword" = "Forgot Password";
+"home" = "Home";
+"account" = "Account";
+"test" = "Test";
+"categories" = "Categories";
+"filters" = "Filters";
+"cart" = "Cart";
+"checkout" = "Checkout";
+"addressBook" = "Address Book";
+"addAddress" = "Add New Address";
+"updateAddress" = "Update Address";
+"updateEmail" = "Update Email";
+"updatePassword" = "Update Password";
+"authentication" = "Authentication";
+"about" = "About";
+"register" = "Register";
+"store" = "Store";
+"report" = "Reports";
+"myBiomarkers" = "My Biomarkers & Codes";
+"notification" = "Notification";
+

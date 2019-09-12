@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="M0y-Xt-69n" customClass="SignInHeaderView" customModule="INKcrypt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="ovt-gY-MxO">
+                    <rect key="frame" x="12" y="21.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Jw3-EV-CTc"/>
+                        <constraint firstAttribute="width" constant="20" id="vCc-Mg-kjF"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJN-G8-K19">
+                    <rect key="frame" x="66" y="6.5" width="99" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="99" id="uAf-RC-DfV"/>
+                        <constraint firstAttribute="height" constant="30" id="uzy-h8-QDc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" red="0.2156862745" green="0.24313725489999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="tableName" value="Sign In"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignIn to access your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bN0-Q9-Wed">
+                    <rect key="frame" x="66" y="36.5" width="190" height="17"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <color key="textColor" red="0.2156862745" green="0.24313725489999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuA-w5-3px">
+                    <rect key="frame" x="32" y="0.0" width="343" height="63"/>
+                    <connections>
+                        <action selector="signInButtonPressed:" destination="M0y-Xt-69n" eventType="touchUpInside" id="f4k-za-mw3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bN0-Q9-Wed" firstAttribute="top" secondItem="ZJN-G8-K19" secondAttribute="bottom" id="1a4-Pl-4Me"/>
+                <constraint firstItem="lzw-vq-xhx" firstAttribute="bottom" secondItem="fuA-w5-3px" secondAttribute="bottom" id="7LQ-Lz-y54"/>
+                <constraint firstItem="lzw-vq-xhx" firstAttribute="bottom" secondItem="bN0-Q9-Wed" secondAttribute="bottom" constant="9.5" id="Gn2-Pc-po3"/>
+                <constraint firstItem="bN0-Q9-Wed" firstAttribute="leading" secondItem="ZJN-G8-K19" secondAttribute="leading" id="L7R-lI-fFK"/>
+                <constraint firstItem="lzw-vq-xhx" firstAttribute="trailing" secondItem="fuA-w5-3px" secondAttribute="trailing" id="MX6-oh-397"/>
+                <constraint firstItem="fuA-w5-3px" firstAttribute="top" secondItem="lzw-vq-xhx" secondAttribute="top" id="Reo-Ip-EYU"/>
+                <constraint firstItem="ZJN-G8-K19" firstAttribute="top" secondItem="ovt-gY-MxO" secondAttribute="top" constant="-15" id="Spe-3t-33P"/>
+                <constraint firstItem="fuA-w5-3px" firstAttribute="leading" secondItem="ovt-gY-MxO" secondAttribute="trailing" id="hl5-fQ-9Ql"/>
+                <constraint firstItem="ovt-gY-MxO" firstAttribute="leading" secondItem="lzw-vq-xhx" secondAttribute="leading" constant="12" id="i9M-fp-kzn"/>
+                <constraint firstItem="ovt-gY-MxO" firstAttribute="centerY" secondItem="lzw-vq-xhx" secondAttribute="centerY" id="jfV-pM-7Ro"/>
+                <constraint firstItem="ZJN-G8-K19" firstAttribute="leading" secondItem="ovt-gY-MxO" secondAttribute="trailing" constant="34" id="p7Y-yO-zL6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="lzw-vq-xhx"/>
+            <point key="canvasLocation" x="52" y="56.221889055472268"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="account" width="20" height="21"/>
+    </resources>
+</document>

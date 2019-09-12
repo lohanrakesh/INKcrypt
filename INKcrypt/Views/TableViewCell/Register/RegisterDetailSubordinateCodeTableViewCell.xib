@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegisterDetailSubordinateCodeTableViewCell" id="KGk-i7-Jjw" customClass="RegisterDetailSubordinateCodeTableViewCell" customModule="INKcrypt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRw-K6-Eja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="95.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subordinate Item Codes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-p4-1MG">
+                                <rect key="frame" x="12" y="2" width="351" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CBp-lI-Sk7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.21176470588235294" green="0.25098039215686274" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-ds-CCb" customClass="CustomButton" customModule="INKcrypt" customModuleProvider="target">
+                                <rect key="frame" x="18" y="42" width="313" height="46"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.6470588235294118" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="uhO-eo-tjl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <state key="normal" title="Add New Subordinate Item Code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XYR-o3-SJM">
+                                <rect key="frame" x="341" y="54" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="A6K-l4-z4H"/>
+                                    <constraint firstAttribute="width" constant="22" id="m2A-aG-ezd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ebl-p4-1MG" secondAttribute="trailing" constant="12" id="44K-lE-sSP"/>
+                            <constraint firstAttribute="trailing" secondItem="XYR-o3-SJM" secondAttribute="trailing" constant="12" id="5vH-m7-OuI"/>
+                            <constraint firstItem="Ebl-p4-1MG" firstAttribute="top" secondItem="TRw-K6-Eja" secondAttribute="top" constant="2" id="6oP-FP-Ov1"/>
+                            <constraint firstItem="dK0-ds-CCb" firstAttribute="top" secondItem="Ebl-p4-1MG" secondAttribute="bottom" id="QGp-Ks-HaB"/>
+                            <constraint firstItem="dK0-ds-CCb" firstAttribute="leading" secondItem="TRw-K6-Eja" secondAttribute="leading" constant="18" id="VAo-BH-guj"/>
+                            <constraint firstItem="Ebl-p4-1MG" firstAttribute="leading" secondItem="TRw-K6-Eja" secondAttribute="leading" constant="12" id="ZBn-XW-DWB"/>
+                            <constraint firstItem="XYR-o3-SJM" firstAttribute="centerY" secondItem="dK0-ds-CCb" secondAttribute="centerY" id="bIy-S6-6tZ"/>
+                            <constraint firstItem="XYR-o3-SJM" firstAttribute="leading" secondItem="dK0-ds-CCb" secondAttribute="trailing" constant="10" id="ce1-NO-mcg"/>
+                            <constraint firstAttribute="bottom" secondItem="dK0-ds-CCb" secondAttribute="bottom" constant="7.5" id="fK3-iT-hp7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TRw-K6-Eja" secondAttribute="trailing" id="Axd-5N-1da"/>
+                    <constraint firstItem="TRw-K6-Eja" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JD3-bF-iL9"/>
+                    <constraint firstAttribute="bottom" secondItem="TRw-K6-Eja" secondAttribute="bottom" id="TiD-lz-sFx"/>
+                    <constraint firstItem="TRw-K6-Eja" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uCY-Es-Eil"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="questionIcon" width="19" height="19"/>
+    </resources>
+</document>

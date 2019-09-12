@@ -1,0 +1,19 @@
+/* 
+  Account.strings
+  INKcrypt
+
+  Created by Vishal Ahlawat on 3/26/19.
+  Copyright © 2019 Q3 Technologies. All rights reserved.
+*/
+"logout" = "Logout";
+"myProfile" = "My Profile";
+"orderHistory" = "Order History";
+"address" = "Address";
+"savedCard" = "Saved Card";
+"myBiomarkersCodes" = "My Biomarkers & Codes";
+"report" = "Report";
+"about" = "About";
+"contactAndSupport" = "Contact and Support";
+"termsAndConditions" = "Terms and Conditions";
+"settings" = "Settings";
+"changePassword" = "Change Password";

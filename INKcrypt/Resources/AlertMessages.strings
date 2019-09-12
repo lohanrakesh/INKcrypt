@@ -1,0 +1,40 @@
+/* 
+  AlertMessages.strings
+  INKcrypt
+
+  Created by Sandeep Kumar on 28/07/18.
+  Copyright © 2018 Q3 Technologies. All rights reserved.
+*/
+"error" = "Oops! Some thing went wrong. Please try again";
+"oldPasswordEmpty" = "Please enter current password";
+"newPasswordEmpty" = "Please enter new password";
+"confirmPasswordEmpty" = "Please re-type new password";
+"oldNewPasswordMatch" = "Old password and new password can't be same";
+"invalidEmail" = "Please provide a valid Email";
+"comingSoonMessage" = "Coming soon...";
+"enterMailPhone" = "Please enter Mail or Phone number";
+"mailPhoneValidation" = "Please enter a Vaild Mail or Phone number";
+"enterPassword" = "Please enter password";
+"passwordValidation" = "Password must be 8 or more and less than 15 character long, must contain 1 capital letter, 1 number and 1 special character";
+"enterFirstName" = "Please enter first name";
+"enterLastName" = "Please enter last name";
+"firstNameSpecialChar" = "Remove special character from first name";
+"lastNameSpecialChar" = "Remove special character from last name";
+"enterMail" = "Please enter email address";
+"validMail" = "Please enter valid Email";
+"enterMobileNumber" = "Please enter mobile number";
+"mobileZeroPrefix" = "First digit cannot be 0";
+"enterMobileCode" = "Please enter country code";
+"validMobileNumber" = "Please enter valid Mobile Number";
+"enterRePassword" = "Please re-enter passwordenter";
+"matchingPassword" = "Password doesn't match with new password entered";
+"enterName" = "Please enter name";
+"enterCompany" = "Please enter company";
+"enterDescription" = "Please enter description";
+"enterQRCode" = "Please enter QR code";
+"alertTitle" = "INKCrypt";
+"sessionExpire" = "Your session has expired please ogin again";
+"alertOk" = "Ok";
+"alertLogin" = "Login";
+"startKit" = "Please add start kit first";
+"login" = "Please login first";

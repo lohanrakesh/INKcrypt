@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="drc-Ux-ZHc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="jB5-33-96z">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" id="drc-Ux-ZHc" customClass="TabBarViewController" customModule="INKcrypt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="tqz-oc-XYk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.92941176469999998" green="0.1058823529" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.92941176469999998" green="0.1058823529" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aug-st-wJZ" kind="relationship" relationship="viewControllers" id="aEF-us-kVu"/>
+                        <segue destination="BeJ-MX-R8s" kind="relationship" relationship="viewControllers" id="sDq-aR-ulL"/>
+                        <segue destination="WBg-y6-nLM" kind="relationship" relationship="viewControllers" id="T3S-vB-zwI"/>
+                        <segue destination="mga-RU-acm" kind="relationship" relationship="viewControllers" id="cRN-Et-Yp4"/>
+                        <segue destination="wvo-5Q-VLN" kind="relationship" relationship="viewControllers" id="jam-oh-of5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdc-fh-zuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-799" y="-164"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="rLy-xK-SRU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="aug-st-wJZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="HOME" image="home" selectedImage="homeSelected" id="83U-Cd-YUh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imM-tN-C9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="-496"/>
+        </scene>
+        <!--Authenticate-->
+        <scene sceneID="DK0-Ba-2HA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Authenticate" id="BeJ-MX-R8s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="AUTHENTICATE" image="aunthenticate_inactive" selectedImage="aunthenticate_active" id="meB-HA-7yF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2a4-2g-Old" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="169"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="5gG-7W-C1t">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" id="WBg-y6-nLM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="REGISTER" image="register_active" selectedImage="register_inactive" id="YYg-AT-iP7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cng-0q-87p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="846"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="Ta0-28-zk3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="wvo-5Q-VLN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ACCOUNT" image="account_inactive" selectedImage="account_inactive" id="2zm-Bx-43d"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWY-Q2-Cco" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="1515"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="pis-8d-RaS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Store" id="mga-RU-acm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="STORE" image="store_inactive" selectedImage="store_active" id="WoE-f9-Qfq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abL-jm-g8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282" y="839"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account_inactive" width="20" height="21"/>
+        <image name="aunthenticate_active" width="25" height="23"/>
+        <image name="aunthenticate_inactive" width="25" height="23"/>
+        <image name="home" width="22" height="22"/>
+        <image name="homeSelected" width="22" height="22"/>
+        <image name="register_active" width="16" height="22"/>
+        <image name="register_inactive" width="16" height="22"/>
+        <image name="store_active" width="24" height="22"/>
+        <image name="store_inactive" width="24" height="22"/>
+    </resources>
+</document>

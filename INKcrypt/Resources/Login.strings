@@ -1,0 +1,11 @@
+/* 
+  Login.strings
+  INKcrypt
+
+  Created by Sandeep Kumar on 28/07/18.
+  Copyright © 2018 Q3 Technologies. All rights reserved.
+*/
+"user_name" = "User Name";
+"password" = "Password";
+"sign_in" = "Sign In";
+

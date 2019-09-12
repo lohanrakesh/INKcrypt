@@ -1,0 +1,9 @@
+/* 
+  DataLoader.strings
+  INKcrypt
+
+  Created by Sandeep Kumar on 28/07/18.
+  Copyright © 2018 Q3 Technologies. All rights reserved.
+*/
+"loading_data" = "Loading Data...";
+"data_loaded" = "Data Loaded!";
